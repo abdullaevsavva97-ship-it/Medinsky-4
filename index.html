@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Тест — Арабский язык</title><style>:root{--bg:#0f0e17;--card:#1a1828;--card2:#221f35;--accent:#c5a028;--accent2:#9b59b6;--text:#e8e4f0;--muted:#7a7590;--correct:#27ae60;--wrong:#e74c3c;--border:#2e2b45}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:sans-serif;min-height:100vh}.container{max-width:780px;margin:0 auto;padding:30px 16px 80px}header{text-align:center;margin-bottom:36px}.brand{font-size:2rem;font-weight:900;letter-spacing:4px;color:var(--accent);margin-bottom:10px;text-shadow:0 0 30px rgba(197,160,40,0.4)}.social{display:flex;justify-content:center;gap:14px;margin-bottom:14px;flex-wrap:wrap}.social a{display:flex;align-items:center;gap:6px;text-decoration:none;font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:20px}.insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}.yt{background:#ff0000;color:#fff}h1{font-size:1.25rem;margin-bottom:5px}header p{color:var(--muted);font-size:.85rem}.divider{height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:22px 0}.pb{background:var(--border);border-radius:99px;height:6px;margin-bottom:5px;overflow:hidden}.pf{height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));border-radius:99px;transition:width .5s}.pl{text-align:right;font-size:.73rem;color:var(--muted);margin-bottom:22px}.sh{display:flex;align-items:center;gap:11px;margin-bottom:14px}.sn{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;flex-shrink:0}.st{font-size:.97rem;font-weight:700}.sd{font-size:.74rem;color:var(--muted);margin-top:2px}.sb{margin-bottom:32px}.qb{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:17px;margin-bottom:12px;transition:border-color .3s}.qb.correct{border-color:var(--correct);background:rgba(39,174,96,.05)}.qb.wrong{border-color:var(--wrong);background:rgba(231,76,60,.05)}.qt{font-size:.9rem;font-weight:600;margin-bottom:11px;line-height:1.5}.qa{font-size:1.25rem;direction:rtl;text-align:center;color:var(--accent);padding:10px;background:var(--card2);border-radius:10px;margin-bottom:11px;line-height:2}.og{display:grid;gap:8px}.tc{grid-template-columns:1fr 1fr}.ob{background:var(--card2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;color:var(--text);font-family:sans-serif;font-size:.86rem;cursor:pointer;transition:all .2s;text-align:center;width:100%;line-height:1.4}.ob:hover{border-color:var(--accent);background:rgba(197,160,40,.08)}.ob.sc{border-color:var(--correct);background:rgba(39,174,96,.15);color:#5ddb8d}.ob.sw{border-color:var(--wrong);background:rgba(231,76,60,.15);color:#f08080}.ob.sk{border-color:var(--correct);background:rgba(39,174,96,.08)}.ob:disabled{cursor:default;color:var(--text)}.ob.sc:disabled{color:#5ddb8d}.ob.sw:disabled{color:#f08080}.fb{font-size:.79rem;margin-top:8px;padding:8px 11px;border-radius:7px;display:none;line-height:1.5}.fb.show{display:block}.fb.ok{background:rgba(39,174,96,.1);color:#5ddb8d}.fb.bad{background:rgba(231,76,60,.1);color:#f08080}.mc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}.mcl{display:flex;flex-direction:column;gap:6px}.mi{padding:10px;border-radius:9px;border:1px solid var(--border);text-align:center;font-size:.86rem;line-height:1.4}.ml{background:var(--card2);cursor:pointer;transition:all .2s}.ml:hover:not(.mok){border-color:var(--accent)}.ml.sel{border-color:var(--accent);background:rgba(197,160,40,.12)}.ml.mok{border-color:var(--correct);background:rgba(39,174,96,.1);color:#5ddb8d;cursor:default}.mbad{border-color:var(--wrong)!important;background:rgba(231,76,60,.1)!important}.mr{background:rgba(155,89,182,.1);border-color:rgba(155,89,182,.3);cursor:pointer;transition:all .2s;direction:rtl;font-size:1.1rem;color:var(--accent)}.mr:hover:not(.mok){border-color:var(--accent2)}.mr.mok{border-color:var(--correct);background:rgba(39,174,96,.1);color:#5ddb8d;cursor:default}.audio-btn{background:var(--card2);border:1px solid var(--accent2);border-radius:10px;padding:10px 18px;color:var(--accent);font-family:sans-serif;font-size:.92rem;cursor:pointer;display:block;margin:0 auto 12px;transition:all .2s}.audio-btn:hover{background:rgba(155,89,182,.15)}.ia{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;color:var(--text);font-family:sans-serif;font-size:.9rem;outline:none;margin-bottom:7px}.ia.ci{border-color:var(--correct)}.ia.wi{border-color:var(--wrong)}.cb{background:linear-gradient(135deg,var(--accent2),var(--accent));border:none;border-radius:9px;padding:9px 16px;color:#fff;font-family:sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;margin-top:4px}.cb:disabled{opacity:.4}.rule-box{background:linear-gradient(135deg,rgba(155,89,182,.15),rgba(197,160,40,.1));border:1px solid var(--accent2);border-radius:12px;padding:14px 17px;margin-bottom:24px}.rule-title{font-size:.85rem;color:var(--accent2);font-weight:700;margin-bottom:8px}.rule-note{font-size:.8rem;color:var(--muted);line-height:1.9}.rule-note b{color:var(--accent)}.rule-ex{direction:rtl;font-size:1.1rem;color:var(--accent);background:var(--card2);border-radius:8px;padding:7px 12px;margin:6px 0;text-align:right}.cah{font-size:.76rem;color:var(--muted);margin-top:5px;line-height:1.5}.sa{text-align:center;margin-top:38px}.subb{background:linear-gradient(135deg,var(--accent2),var(--accent));border:none;border-radius:13px;padding:14px 38px;color:#fff;font-size:1rem;font-weight:700;cursor:pointer}#rs{display:none;text-align:center;padding:46px 18px}.rsc{font-size:3.8rem;font-weight:700;color:var(--accent);margin-bottom:9px}.rsg{font-size:1.6rem;font-weight:700;margin-bottom:14px}.rsm{color:var(--muted);font-size:.9rem;margin-bottom:12px}.rb{background:transparent;border:1px solid var(--accent);border-radius:11px;padding:11px 30px;color:var(--accent);font-size:.9rem;cursor:pointer}.errors-block{margin-top:28px;text-align:left}.errors-title{font-size:.97rem;font-weight:700;color:var(--wrong);margin-bottom:12px;text-align:center}.err-item{background:var(--card);border:1px solid var(--wrong);border-radius:12px;padding:13px;margin-bottom:9px}.err-q{font-size:.8rem;color:var(--muted);margin-bottom:5px}.err-arabic{font-size:1.1rem;direction:rtl;color:var(--accent);margin-bottom:5px;line-height:1.8}.err-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}.err-yours{background:rgba(231,76,60,.1);border:1px solid var(--wrong);border-radius:7px;padding:4px 9px;font-size:.77rem;color:#f08080}.err-correct{background:rgba(39,174,96,.1);border:1px solid var(--correct);border-radius:7px;padding:4px 9px;font-size:.77rem;color:#5ddb8d}.err-explain{font-size:.76rem;color:var(--muted);background:rgba(155,89,182,.08);border-left:3px solid var(--accent2);padding:6px 10px;border-radius:0 7px 7px 0;line-height:1.5}@media(max-width:500px){.tc{grid-template-columns:1fr}.mc{grid-template-columns:1fr}}</style></head><body>
+<div class="container">
+<header>
+<div class="brand">SAVVA.ARABIYA</div>
+<div class="social">
+<a href="https://www.instagram.com/savva.arabiya?igsh=ejU2cDNrOXBuaTVw&utm_source=qr" target="_blank" class="insta"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg> Instagram</a>
+<a href="https://youtube.com/@savvaarabiya?si=l0A5akdb7I6II2iI" target="_blank" class="yt"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg> YouTube</a>
+</div>
+<h1>Тест по арабскому языку</h1>
+<p>Прилагательное (النَّعْت) — согласование с определяемым словом</p>
+</header>
+<div class="divider"></div>
+<div class="pb"><div class="pf" id="pf" style="width:0%"></div></div>
+<div class="pl" id="pl">0 / 0 отвечено</div>
+
+<div class="rule-box">
+<div class="rule-title">📖 Правило: прилагательное согласуется с существительным</div>
+<div class="rule-note">
+<b>1.</b> Прилагательное стоит <b>после</b> существительного.<br>
+<b>2.</b> Оно согласуется с ним <b>в роде</b>: мужской род без окончания, женский род с ـَةٌ.<br>
+<b>3.</b> Оно согласуется с ним <b>в определённости</b>: нет артикля у существительного, значит нет и у прилагательного. Есть артикль الـ у одного, значит он и у другого.
+<div class="rule-ex">طَالِبٌ جَدِيدٌ — новый студент</div>
+<div class="rule-ex">طَالِبَةٌ جَدِيدَةٌ — новая студентка</div>
+<div class="rule-ex">الطَّالِبُ الْجَدِيدُ — новый студент (словосочетание)</div>
+<div class="rule-ex">الطَّالِبُ جَدِيدٌ — студент новый (предложение)</div>
+<b>4.</b> Слова состояния كَسْلَانُ، جَوْعَانُ، عَطْشَانُ، غَضْبَانُ، مَلْآنُ оканчиваются на ـانُ, танвина у них нет.<br><br>
+В тесте слова и предложения из твоего урока. В аудировании ответ нужно написать самому, он проверяется строго.
+</div>
+</div>
+
+<div id="qc"></div>
+
+<div id="rs"><div class="rsc" id="rsc">0%</div><div class="rsg" id="rsg"></div><div class="rsm" id="rsm"></div><p style="color:var(--muted);font-size:.82rem;margin-bottom:28px" id="rsd"></p><div class="errors-block" id="errors-block"></div><br><button class="rb" type="button" onclick="retry()">Пройти тест заново</button></div>
+</div>
+
+<script>
+var S=[
+{t:"Переведи словосочетание",d:"Существительное и прилагательное",k:"mcq",items:[
+{t:"Что означает словосочетание?",a:"طَالِبٌ جَدِيدٌ",c:"Новый студент",w:["Старый студент","Богатый студент","Прилежный студент"],e:"طَالِبٌ — студент. جَدِيدٌ — новый. Прилагательное стоит после существительного."},
+{t:"Что означает словосочетание?",a:"مُدَرِّسٌ جَدِيدٌ",c:"Новый преподаватель",w:["Старый преподаватель","Известный преподаватель","Большой преподаватель"],e:"مُدَرِّسٌ — преподаватель. جَدِيدٌ — новый."},
+{t:"Что означает словосочетание?",a:"تَاجِرٌ غَنِيٌّ",c:"Богатый торговец",w:["Бедный торговец","Известный торговец","Новый торговец"],e:"تَاجِرٌ — торговец. غَنِيٌّ — богатый."},
+{t:"Что означает словосочетание?",a:"رَجُلٌ فَقِيرٌ",c:"Бедный мужчина",w:["Богатый мужчина","Большой мужчина","Старый мужчина"],e:"رَجُلٌ — мужчина. فَقِيرٌ — бедный."},
+{t:"Что означает словосочетание?",a:"لُغَةٌ جَمِيلَةٌ",c:"Красивый язык",w:["Трудный язык","Лёгкий язык","Новый язык"],e:"لُغَةٌ — язык (женский род), поэтому прилагательное с ـَةٌ: جَمِيلَةٌ."},
+{t:"Что означает словосочетание?",a:"مَدِينَةٌ كَبِيرَةٌ",c:"Большой город",w:["Маленький город","Красивый город","Новый город"],e:"مَدِينَةٌ — город (женский род). كَبِيرَةٌ — большая."},
+{t:"Что означает словосочетание?",a:"دَرْسٌ سَهْلٌ",c:"Лёгкий урок",w:["Трудный урок","Новый урок","Старый урок"],e:"دَرْسٌ — урок (мужской род). سَهْلٌ — лёгкий."},
+{t:"Что означает словосочетание?",a:"لُغَةٌ صَعْبَةٌ",c:"Трудный язык",w:["Лёгкий язык","Красивый язык","Старый язык"],e:"صَعْبَةٌ — трудная (женский род, как لُغَةٌ)."},
+{t:"Что означает словосочетание?",a:"فَاكِهَةٌ لَذِيذَةٌ",c:"Вкусный фрукт",w:["Большой фрукт","Маленький фрукт","Дорогой фрукт"],e:"فَاكِهَةٌ — фрукт (женский род). لَذِيذَةٌ — вкусная."},
+{t:"Что означает словосочетание?",a:"تَاجِرٌ شَهِيرٌ",c:"Известный торговец",w:["Богатый торговец","Новый торговец","Бедный торговец"],e:"شَهِيرٌ — известный, знаменитый."},
+{t:"Что означает словосочетание?",a:"طَالِبٌ مُجْتَهِدٌ",c:"Прилежный студент",w:["Ленивый студент","Новый студент","Старый студент"],e:"مُجْتَهِدٌ — прилежный. Противоположное слово: كَسْلَانُ — ленивый."}
+]},
+{t:"Согласуй прилагательное",d:"Выбери форму, которая подходит по роду и определённости",k:"mcq",items:[
+{t:"Выбери прилагательное, согласованное с существительным:",a:"خَدِيجَةُ طَالِبَةٌ ...",c:"مُجْتَهِدَةٌ",w:["مُجْتَهِدٌ","الْمُجْتَهِدَةُ","الْمُجْتَهِدُ"],e:"طَالِبَةٌ женского рода и без артикля. Значит прилагательное тоже женского рода и без артикля: مُجْتَهِدَةٌ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"خَالِدٌ تَاجِرٌ ...",c:"غَنِيٌّ",w:["غَنِيَّةٌ","الْغَنِيُّ","الْغَنِيَّةُ"],e:"تَاجِرٌ мужского рода и без артикля, значит غَنِيٌّ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"الْقَاهِرَةُ مَدِينَةٌ ...",c:"كَبِيرَةٌ",w:["كَبِيرٌ","الْكَبِيرَةُ","الْكَبِيرُ"],e:"مَدِينَةٌ женского рода и без артикля, значит كَبِيرَةٌ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"التُّفَّاحُ فَاكِهَةٌ ...",c:"لَذِيذَةٌ",w:["لَذِيذٌ","اللَّذِيذَةُ","اللَّذِيذُ"],e:"فَاكِهَةٌ женского рода и без артикля, значит لَذِيذَةٌ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"الْعُصْفُورُ طَائِرٌ ...",c:"صَغِيرٌ",w:["صَغِيرَةٌ","الصَّغِيرُ","الصَّغِيرَةُ"],e:"طَائِرٌ мужского рода и без артикля, значит صَغِيرٌ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"الْإِنْكِلِيزِيَّةُ لُغَةٌ ...",c:"صَعْبَةٌ",w:["صَعْبٌ","الصَّعْبَةُ","الصَّعْبُ"],e:"لُغَةٌ женского рода и без артикля, значит صَعْبَةٌ."},
+{t:"Выбери прилагательное, согласованное с существительным:",a:"هَذَا دَرْسٌ ...",c:"سَهْلٌ",w:["سَهْلَةٌ","السَّهْلُ","السَّهْلَةُ"],e:"دَرْسٌ мужского рода и без артикля, значит سَهْلٌ."}
+]},
+{t:"Правила согласования",d:"Проверь, как ты понял правило",k:"mcq",items:[
+{t:"Где стоит прилагательное по отношению к существительному?",c:"После существительного",w:["Перед существительным","В начале предложения","Где угодно"],e:"Прилагательное всегда стоит после существительного: طَالِبٌ جَدِيدٌ."},
+{t:"К слову женского рода прилагательное должно быть...",c:"Женского рода (с окончанием ـَةٌ)",w:["Мужского рода","Всегда без окончания","Только с артиклем"],e:"Согласование в роде: طَالِبَةٌ مُجْتَهِدَةٌ, لُغَةٌ جَمِيلَةٌ."},
+{t:"Если у существительного есть артикль الـ, то прилагательное...",c:"Тоже с артиклем الـ",w:["Без артикля","Всегда с танвином","Стоит перед существительным"],e:"Согласование в определённости: الطَّالِبُ الْجَدِيدُ."},
+{t:"Верно ли это словосочетание?",a:"لُغَةٌ جَمِيلٌ",c:"Неверно",w:["Верно"],e:"لُغَةٌ женского рода, поэтому нужно جَمِيلَةٌ: لُغَةٌ جَمِيلَةٌ."},
+{t:"Что означает?",a:"الطَّالِبُ جَدِيدٌ",c:"Студент новый (это предложение)",w:["Новый студент (это словосочетание)","Студент был новым","Студент не новый"],e:"У существительного есть артикль, а у прилагательного нет. Это предложение: «студент новый»."},
+{t:"Что означает?",a:"الطَّالِبُ الْجَدِيدُ",c:"Новый студент (это словосочетание)",w:["Студент новый (это предложение)","Студент был новым","Новые студенты"],e:"Артикль есть у обоих слов. Это словосочетание: «новый студент»."},
+{t:"Чем оканчиваются слова كَسْلَانُ، جَوْعَانُ، عَطْشَانُ، غَضْبَانُ، مَلْآنُ?",c:"ـانُ",w:["ـانٌ","ـَةٌ","ـِيٌّ"],e:"Эти слова оканчиваются на ـانُ без танвина: طَالِبٌ كَسْلَانُ."}
+]},
+{t:"Сопоставь слова",d:"Нажми слово слева, затем пару справа. Ошибка при первой попытке засчитывается.",k:"match",items:[
+{t:"Сопоставь слова состояния:",pairs:[["Ленивый","كَسْلَانُ"],["Голодный","جَوْعَانُ"],["Хочет пить","عَطْشَانُ"],["Сердитый","غَضْبَانُ"],["Полный","مَلْآنُ"]]},
+{t:"Сопоставь прилагательные:",pairs:[["Новый","جَدِيدٌ"],["Старый","قَدِيمٌ"],["Бедный","فَقِيرٌ"],["Трудный","صَعْبٌ"],["Прилежный","مُجْتَهِدٌ"]]},
+{t:"Сопоставь словосочетания:",pairs:[["Прилежная студентка","طَالِبَةٌ مُجْتَهِدَةٌ"],["Прилежный студент","طَالِبٌ مُجْتَهِدٌ"],["Большой город","مَدِينَةٌ كَبِيرَةٌ"],["Вкусный фрукт","فَاكِهَةٌ لَذِيذَةٌ"],["Маленькая птица","طَائِرٌ صَغِيرٌ"]]}
+]},
+{t:"Предложения",d:"Выбери правильный перевод",k:"mcq",items:[
+{t:"Переведи предложение:",a:"عَمَّارٌ طَالِبٌ مُجْتَهِدٌ، وَمَحْمُودٌ طَالِبٌ كَسْلَانُ",c:"Аммар прилежный студент, а Махмуд ленивый студент",w:["Аммар ленивый студент, а Махмуд прилежный студент","Аммар и Махмуд прилежные студенты","Аммар новый студент, а Махмуд старый студент"],e:"مُجْتَهِدٌ — прилежный. كَسْلَانُ — ленивый."},
+{t:"Переведи диалог:",a:"مَنْ هَذَا الرَّجُلُ؟ هُوَ عَبَّاسٌ. عَبَّاسٌ تَاجِرٌ غَنِيٌّ",c:"Кто этот мужчина? Это Аббас. Аббас богатый торговец",w:["Кто этот мужчина? Это Аббас. Аббас бедный торговец","Что это за мужчина? Он врач","Где этот мужчина? Он в магазине"],e:"مَنْ — кто (о человеке). تَاجِرٌ غَنِيٌّ — богатый торговец."},
+{t:"Переведи диалог:",a:"أَأَنْتَ طَالِبٌ جَدِيدٌ؟ نَعَمْ، أَنَا طَالِبٌ جَدِيدٌ",c:"Ты новый студент? Да, я новый студент",w:["Ты старый студент? Нет, я новый студент","Ты новый студент? Нет, я старый студент","Он новый студент? Да, он новый студент"],e:"أَأَنْتَ — ты? (вопрос с أ). نَعَمْ — да."},
+{t:"Переведи диалог:",a:"أَأَنْتَ رَجُلٌ غَنِيٌّ؟ لَا، أَنَا رَجُلٌ فَقِيرٌ",c:"Ты богатый мужчина? Нет, я бедный мужчина",w:["Ты бедный мужчина? Да, я бедный мужчина","Ты богатый мужчина? Да, я богатый мужчина","Он богатый мужчина? Нет, он бедный мужчина"],e:"غَنِيٌّ — богатый. فَقِيرٌ — бедный. لَا — нет."},
+{t:"Переведи вопрос:",a:"لِمَاذَا الْمُدَرِّسُ غَضْبَانُ الْيَوْمَ؟",c:"Почему учитель сегодня сердит?",w:["Почему учитель вчера сердит?","Почему студент сегодня сердит?","Почему учитель сегодня доволен?"],e:"لِمَاذَا — почему. غَضْبَانُ — сердитый. الْيَوْمَ — сегодня."},
+{t:"Переведи диалог:",a:"أَأَنْتَ جَوْعَانُ؟ لَا، أَنَا عَطْشَانُ",c:"Ты голоден? Нет, я хочу пить",w:["Ты хочешь пить? Нет, я голоден","Он голоден? Нет, он хочет пить","Ты голоден? Да, я голоден"],e:"جَوْعَانُ — голодный. عَطْشَانُ — хочущий пить."},
+{t:"Переведи предложение:",a:"التُّفَّاحُ فَاكِهَةٌ لَذِيذَةٌ، وَالْعُصْفُورُ طَائِرٌ صَغِيرٌ",c:"Яблоко вкусный фрукт, а воробей маленькая птица",w:["Яблоко маленький фрукт, а воробей вкусная птица","Яблоко большой фрукт, а воробей большая птица","Яблоко вкусный фрукт, а воробей большая птица"],e:"تُفَّاحٌ — яблоко. عُصْفُورٌ — воробей. لَذِيذَةٌ согласовано с فَاكِهَةٌ, صَغِيرٌ согласовано с طَائِرٌ."}
+]},
+{t:"Найди ошибку",d:"Какое словосочетание построено неверно?",k:"mcq",items:[
+{t:"Какое словосочетание построено НЕВЕРНО?",c:"لُغَةٌ جَمِيلٌ",w:["لُغَةٌ جَمِيلَةٌ","طَالِبٌ جَدِيدٌ","مَدِينَةٌ كَبِيرَةٌ"],e:"لُغَةٌ женского рода, значит нужно جَمِيلَةٌ."},
+{t:"Какое словосочетание построено НЕВЕРНО?",c:"طَالِبَةٌ مُجْتَهِدٌ",w:["طَالِبَةٌ مُجْتَهِدَةٌ","تَاجِرٌ غَنِيٌّ","رَجُلٌ فَقِيرٌ"],e:"طَالِبَةٌ женского рода, значит нужно مُجْتَهِدَةٌ."},
+{t:"Какое словосочетание построено НЕВЕРНО?",c:"فَاكِهَةٌ لَذِيذٌ",w:["فَاكِهَةٌ لَذِيذَةٌ","دَرْسٌ سَهْلٌ","طَائِرٌ صَغِيرٌ"],e:"فَاكِهَةٌ женского рода, значит нужно لَذِيذَةٌ."}
+]},
+{t:"🔊 Аудирование: выбери перевод",d:"Нажми кнопку, прослушай и выбери правильный перевод",k:"mcq",items:[
+{t:"Прослушай и выбери перевод:",s:"طَالِبٌ كَسْلَانُ",c:"Ленивый студент",w:["Прилежный студент","Новый студент","Богатый студент"],e:"طَالِبٌ كَسْلَانُ — ленивый студент."},
+{t:"Прослушай и выбери перевод:",s:"مَدِينَةٌ كَبِيرَةٌ",c:"Большой город",w:["Маленький город","Красивая деревня","Новая школа"],e:"مَدِينَةٌ كَبِيرَةٌ — большой город."},
+{t:"Прослушай и выбери перевод:",s:"لُغَةٌ صَعْبَةٌ",c:"Трудный язык",w:["Лёгкий язык","Красивый язык","Старый язык"],e:"لُغَةٌ صَعْبَةٌ — трудный язык."},
+{t:"Прослушай и выбери перевод:",s:"الْكُوبُ مَلْآنُ",c:"Стакан полон",w:["Стакан сломан","Стакан новый","Стакан пуст"],e:"الْكُوبُ — стакан. مَلْآنُ — полный."}
+]},
+{t:"🔊 Аудирование: напиши перевод",d:"Нажми кнопку, прослушай и напиши перевод на русском. Проверяется строго.",k:"audio",items:[
+{ar:"طَالِبَةٌ مُجْتَهِدَةٌ",req:[["студентк"],["прилежн","старательн","усердн","трудолюбив"]],no:["=не","=нет"],ok:"Прилежная студентка.",e:"طَالِبَةٌ — студентка. مُجْتَهِدَةٌ — прилежная."},
+{ar:"الْقَاهِرَةُ مَدِينَةٌ كَبِيرَةٌ",req:[["каир"],["город"],["больш","крупн"]],no:["=не","=нет"],ok:"Каир большой город.",e:"الْقَاهِرَةُ — Каир. مَدِينَةٌ كَبِيرَةٌ — большой город."},
+{ar:"عَبَّاسٌ تَاجِرٌ غَنِيٌّ",req:[["аббас"],["торгов","купец"],["богат"]],no:["=не","=нет"],ok:"Аббас богатый торговец.",e:"تَاجِرٌ غَنِيٌّ — богатый торговец."},
+{ar:"هَذَا دَرْسٌ سَهْلٌ",req:[["урок"],["легк","прост","нетрудн"]],no:["=не","=нет"],ok:"Это лёгкий урок.",e:"دَرْسٌ سَهْلٌ — лёгкий урок."},
+{ar:"الْعَرَبِيَّةُ لُغَةٌ جَمِيلَةٌ",req:[["арабск"],["язык"],["красив"]],no:["=не","=нет"],ok:"Арабский язык красивый язык.",e:"الْعَرَبِيَّةُ — арабский язык. لُغَةٌ جَمِيلَةٌ — красивый язык."},
+{ar:"أَنَا جَوْعَانُ",req:[["=я"],["голод"]],no:["=не","=нет","=ты"],ok:"Я голоден.",e:"أَنَا — я. جَوْعَانُ — голодный."},
+{ar:"أَأَنْتَ جَوْعَانُ؟ لَا، أَنَا عَطْشَانُ",ord:[["=ты"],["голод"],["=нет"],["=я"],["пить","жажд"]],ok:"Ты голоден? Нет, я хочу пить.",e:"أَأَنْتَ جَوْعَانُ — ты голоден? لَا — нет. أَنَا عَطْشَانُ — я хочу пить."},
+{ar:"لِمَاذَا الْمُدَرِّسُ غَضْبَانُ الْيَوْمَ؟",req:[["почему"],["учител","преподавател"],["сердит","злит","зол","гневн","разгневан","раздраж"],["сегодня"]],no:["=не","=вчера"],ok:"Почему учитель сегодня сердит?",e:"لِمَاذَا — почему. غَضْبَانُ — сердитый. الْيَوْمَ — сегодня."},
+{ar:"الْكُوبُ مَلْآنُ",req:[["стакан","чашк","кружк","кубок"],["полн","налит","наполнен"]],no:["=не","=нет","пуст"],ok:"Стакан полон.",e:"الْكُوبُ — стакан. مَلْآنُ — полный."},
+{ar:"مَحْمُودٌ طَالِبٌ كَسْلَانُ وَعَمَّارٌ طَالِبٌ مُجْتَهِدٌ",ord:[["махмуд"],["ленив","лентяй"],["аммар","амар"],["прилежн","старательн","усердн","трудолюбив"]],ok:"Махмуд ленивый студент, а Аммар прилежный студент.",e:"مَحْمُودٌ طَالِبٌ كَسْلَانُ — Махмуд ленивый студент. عَمَّارٌ طَالِبٌ مُجْتَهِدٌ — Аммар прилежный студент."}
+]}
+];
+
+var TOTAL=0,sc={},mistakes={},answered=new Set();
+var AR=/[\u0600-\u06FF]/;
+
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
+function shuffle(a){var r=a.slice();for(var i=r.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=r[i];r[i]=r[j];r[j]=t;}return r;}
+function norm(s){return s.toLowerCase().replace(/ё/g,'е').replace(/[^a-zа-я0-9 ]+/g,' ').replace(/\s+/g,' ').trim();}
+
+function findIdx(hay,s,from){
+  if(s.charAt(0)==='='){var i=hay.indexOf(' '+s.slice(1)+' ',from);return i<0?-1:i+1;}
+  return hay.indexOf(s,from);
+}
+function hasAny(v,g){var hay=' '+v+' ';return g.some(function(s){return findIdx(hay,s,0)>-1;});}
+function seq(v,groups){
+  var hay=' '+v+' ',p=-1;
+  for(var i=0;i<groups.length;i++){
+    var best=-1;
+    groups[i].forEach(function(s){var ix=findIdx(hay,s,p+1);if(ix>-1&&(best===-1||ix<best))best=ix;});
+    if(best===-1)return false;
+    p=best;
+  }
+  return true;
+}
+
+function spk(t){
+  if(!('speechSynthesis' in window)){alert('Аудио не поддерживается в этом браузере. Попробуйте Chrome или Safari.');return;}
+  var ss=window.speechSynthesis;
+  ss.cancel();
+  setTimeout(function(){
+    var u=new SpeechSynthesisUtterance(t);
+    u.lang='ar-SA';u.rate=0.8;
+    var vs=ss.getVoices();
+    for(var i=0;i<vs.length;i++){if(/^ar/i.test(vs[i].lang)){u.voice=vs[i];break;}}
+    ss.speak(u);
+  },150);
+}
+if('speechSynthesis' in window){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices();};}
+
+function upd(){
+  var n=answered.size;
+  document.getElementById('pf').style.width=Math.min(100,Math.round(n/TOTAL*100))+'%';
+  document.getElementById('pl').textContent=n+' / '+TOTAL+' отвечено';
+}
+function markQ(id,ok,info){
+  if(answered.has(id))return;
+  answered.add(id);
+  sc[id]=ok?1:0;
+  if(!ok&&info)mistakes[id]=info;
+  upd();
+}
+
+function mkMcq(it,id){
+  var qb=el('div','qb');
+  qb.appendChild(el('div','qt',it.t));
+  if(it.s){
+    var ab=el('button','audio-btn','🔊 Прослушать');ab.type='button';
+    ab.onclick=function(){spk(it.s);};
+    qb.appendChild(ab);
+  }
+  if(it.a)qb.appendChild(el('div','qa',it.a));
+  var opts=shuffle([it.c].concat(it.w));
+  var short=opts.every(function(o){return o.length<=24;});
+  var grid=el('div','og'+(short?' tc':''));
+  var fb=el('div','fb');
+  var btns=[];var done=false;
+  opts.forEach(function(o){
+    var b=el('button','ob',o);b.type='button';
+    if(AR.test(o)){b.style.direction='rtl';b.style.fontSize='1.15rem';}
+    b.onclick=function(){
+      if(done)return;done=true;
+      btns.forEach(function(x){x[0].disabled=true;});
+      if(o===it.c){
+        b.classList.add('sc');qb.classList.add('correct');
+        fb.textContent='✓ Правильно! 💡 '+it.e;fb.className='fb show ok';
+        markQ(id,true);
+      }else{
+        b.classList.add('sw');qb.classList.add('wrong');
+        btns.forEach(function(x){if(x[1]===it.c)x[0].classList.add('sk');});
+        fb.textContent='✗ Неправильно. 💡 '+it.e;fb.className='fb show bad';
+        markQ(id,false,{q:it.t,ar:it.a||it.s||'',yours:o,correct:it.c,e:it.e});
+      }
+    };
+    btns.push([b,o]);grid.appendChild(b);
+  });
+  qb.appendChild(grid);qb.appendChild(fb);
+  return qb;
+}
+
+function mkMatch(blk,bi){
+  var qb=el('div','qb');
+  qb.appendChild(el('div','qt',blk.t));
+  var n=blk.pairs.length;
+  var idx=[];for(var k=0;k<n;k++)idx.push(k);
+  var mc=el('div','mc');
+  var lc=el('div','mcl'),rc=el('div','mcl');
+  var fb=el('div','fb');
+  var sel=null,selI=null,doneCount=0;
+  shuffle(idx).forEach(function(i){
+    var d=el('div','mi ml',blk.pairs[i][0]);
+    d.onclick=function(){
+      if(d.classList.contains('mok'))return;
+      if(sel)sel.classList.remove('sel');
+      sel=d;selI=i;d.classList.add('sel');
+    };
+    lc.appendChild(d);
+  });
+  shuffle(idx).forEach(function(i){
+    var d=el('div','mi mr',blk.pairs[i][1]);
+    d.onclick=function(){
+      if(d.classList.contains('mok')||selI===null)return;
+      if(selI===i){
+        sel.classList.remove('sel');sel.classList.add('mok');d.classList.add('mok');
+        markQ('m'+bi+'_'+i,true);
+        sel=null;selI=null;doneCount++;
+        if(doneCount===n){fb.textContent='✓ Все пары собраны!';fb.className='fb show ok';qb.classList.add('correct');}
+      }else{
+        var a=sel,li=selI;
+        markQ('m'+bi+'_'+li,false,{q:'Сопоставление: '+blk.pairs[li][0],ar:blk.pairs[li][1],yours:d.textContent,correct:blk.pairs[li][1],e:'Правильная пара: '+blk.pairs[li][0]+' = '+blk.pairs[li][1]});
+        a.classList.remove('sel');a.classList.add('mbad');d.classList.add('mbad');
+        sel=null;selI=null;
+        setTimeout(function(){a.classList.remove('mbad');d.classList.remove('mbad');},700);
+      }
+    };
+    rc.appendChild(d);
+  });
+  mc.appendChild(lc);mc.appendChild(rc);
+  qb.appendChild(mc);qb.appendChild(fb);
+  return qb;
+}
+
+function mkAudio(it,id){
+  var qb=el('div','qb');
+  qb.appendChild(el('div','qt','Прослушай и напиши перевод на русском:'));
+  var ab=el('button','audio-btn','🔊 Прослушать');ab.type='button';
+  ab.onclick=function(){spk(it.ar);};
+  qb.appendChild(ab);
+  var inp=el('input','ia');inp.type='text';inp.placeholder='Напиши перевод на русском...';
+  inp.setAttribute('autocomplete','off');
+  var cb=el('button','cb','Проверить');cb.type='button';
+  var fb=el('div','fb');var h=el('div','cah');
+  var done=false;
+  function check(){
+    if(done)return;
+    var raw=inp.value.trim();
+    var v=norm(raw);
+    if(!v)return;
+    done=true;inp.disabled=true;cb.disabled=true;
+    var ok=it.ord?seq(v,it.ord):it.req.every(function(g){return hasAny(v,g);});
+    if(ok&&it.no&&hasAny(v,it.no))ok=false;
+    if(ok){
+      inp.classList.add('ci');qb.classList.add('correct');
+      fb.textContent='✓ Правильно! 💡 '+it.e;fb.className='fb show ok';
+      markQ(id,true);
+    }else{
+      inp.classList.add('wi');qb.classList.add('wrong');
+      fb.textContent='✗ Неправильно. 💡 '+it.e;fb.className='fb show bad';
+      h.textContent='Правильный ответ: '+it.ok;
+      markQ(id,false,{q:'Аудирование',ar:it.ar,yours:raw,correct:it.ok,e:it.e});
+    }
+  }
+  cb.onclick=check;
+  inp.onkeydown=function(e){if(e.key==='Enter')check();};
+  qb.appendChild(inp);qb.appendChild(cb);qb.appendChild(fb);qb.appendChild(h);
+  return qb;
+}
+
+function calcTotal(){
+  var t=0;
+  S.forEach(function(s){
+    if(s.k==='match'){s.items.forEach(function(b){t+=b.pairs.length;});}
+    else t+=s.items.length;
+  });
+  return t;
+}
+
+function render(){
+  var root=document.getElementById('qc');
+  root.innerHTML='';
+  sc={};mistakes={};answered=new Set();
+  TOTAL=calcTotal();
+  S.forEach(function(sec,si){
+    var sb=el('div','sb');
+    var sh=el('div','sh');
+    sh.appendChild(el('div','sn',String(si+1)));
+    var w=el('div');
+    w.appendChild(el('div','st',sec.t));
+    w.appendChild(el('div','sd',sec.d));
+    sh.appendChild(w);sb.appendChild(sh);
+    sec.items.forEach(function(it,ii){
+      var id='s'+si+'_'+ii;
+      if(sec.k==='mcq')sb.appendChild(mkMcq(it,id));
+      else if(sec.k==='match')sb.appendChild(mkMatch(it,si+'x'+ii));
+      else sb.appendChild(mkAudio(it,id));
+    });
+    root.appendChild(sb);
+  });
+  var sa=el('div','sa');
+  var fin=el('button','subb','Завершить тест и узнать оценку');fin.type='button';
+  fin.onclick=showRes;
+  sa.appendChild(fin);root.appendChild(sa);
+  upd();
+}
+
+function showRes(){
+  var c=0;
+  Object.keys(sc).forEach(function(k){if(sc[k]===1)c++;});
+  var p=Math.round(c/TOTAL*100);
+  document.getElementById('qc').style.display='none';
+  document.getElementById('rs').style.display='block';
+  document.getElementById('rsc').textContent=p+'%';
+  var left=TOTAL-answered.size;
+  document.getElementById('rsd').textContent='Правильных: '+c+' из '+TOTAL+(left>0?' (без ответа: '+left+')':'');
+  var g,m,cl;
+  if(p>=90){g='Оценка: 5 — Отлично!';cl='#27ae60';m='Превосходно! Согласование прилагательного усвоено отлично!';}
+  else if(p>=75){g='Оценка: 4 — Хорошо';cl='#2ecc71';m='Хорошая работа! Повтори пункты, в которых были ошибки.';}
+  else if(p>=60){g='Оценка: 3 — Удовлетворительно';cl='#f39c12';m='Повтори согласование по роду и по определённости.';}
+  else if(p>=40){g='Оценка: 2 — Слабо';cl='#e74c3c';m='Нужно больше практики. Перечитай правило.';}
+  else{g='Оценка: 1 — Нужно повторить';cl='#c0392b';m='Вернись к уроку и повтори тему заново.';}
+  var ge=document.getElementById('rsg');ge.textContent=g;ge.style.color=cl;
+  document.getElementById('rsm').textContent=m;
+  document.getElementById('rsc').style.color=cl;
+  var eb=document.getElementById('errors-block');
+  eb.innerHTML='';
+  var keys=Object.keys(mistakes);
+  if(keys.length===0){
+    var ok=el('div','',left>0?'Ошибок в отвеченных заданиях нет, но часть заданий осталась без ответа.':'🎉 Ошибок нет! Все ответы верные!');
+    ok.style.cssText='color:#5ddb8d;text-align:center;padding:18px;background:rgba(39,174,96,0.1);border-radius:12px;border:1px solid #27ae60';
+    eb.appendChild(ok);
+  }else{
+    eb.appendChild(el('div','errors-title','❌ Разбор ошибок ('+keys.length+')'));
+    keys.forEach(function(k){
+      var mm=mistakes[k];
+      var it=el('div','err-item');
+      it.appendChild(el('div','err-q',mm.q));
+      if(mm.ar)it.appendChild(el('div','err-arabic',mm.ar));
+      var row=el('div','err-row');
+      row.appendChild(el('div','err-yours','✗ Твой ответ: '+mm.yours));
+      row.appendChild(el('div','err-correct','✓ Правильно: '+mm.correct));
+      it.appendChild(row);
+      if(mm.e)it.appendChild(el('div','err-explain','💡 '+mm.e));
+      eb.appendChild(it);
+    });
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function retry(){
+  document.getElementById('rs').style.display='none';
+  document.getElementById('qc').style.display='block';
+  render();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+render();
+</script>
+</body></html>
